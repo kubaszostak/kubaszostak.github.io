@@ -1,47 +1,115 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<head>
+    <title>Kuba Szostak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
-    <title>Kuba Szostak by kubaszostak</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="inner">
+    <style type="text/css">
+        .aside-code {
+            background-color: transparent;
+            border-color: transparent;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            right: 0;
+            padding-right: 4em;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(img/rain_cloud_dark_hd.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-color: #344a71; /*#e5f4f9;*/
+
+            color: white;
+            text-shadow: 0 0 3px rgba(10, 10, 10, 0.7);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+            background: #26292E;
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+            z-index: 0;
+        }
+
+        .content {
+            position: absolute;
+            left: 0;
+            top: 20%;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 4em;
+            text-transform: uppercase;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            width: 100%;
+            padding: 0.5em;
+        }
+        @media (max-height: 20em) {
+            footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="content">
         <h1>Kuba Szostak</h1>
-        <h2>Kuba Szostak on GitHub</h2>
-        <a href="https://github.com/kubaszostak" class="button"><small>Follow me on</small>GitHub</a>
-      </div>
-    </header>
+        <p class="lead">
+            <i class="icon-envelope-alt"></i>
+            <span>kuba.szostak@gmail.com</span>
+            <br />
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+            <i class="icon-phone"></i>
+            <span>+48 696477247</span>
+            <br />
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of 
-your projects. Author your page content here using GitHub Flavored Markdown, 
-select a template crafted by a designer, and publish. 
-After your page is generated, you can check out the new branch:</p>
-
-
-        </section>
-
-     </div>
+            <i class="icon-map-marker"></i>
+            <span>Poland, Gdynia</span>
+            <a href="http://player.vimeo.com/video/13339553"><i class="icon-youtube-play text-muted "></i></a>
+            <br />
+        </p>
     </div>
 
-  
-  </body>
+
+    <footer class="text-center text-muted">
+        <a href="http://mapviewer.org" >mapviewer.org</a>
+        |
+        <a href="http://kubaszostak.github.io/ivt/" >IVT</a>
+    </footer>
+
+
+<!--    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+-->
+
+</body>
 </html>
