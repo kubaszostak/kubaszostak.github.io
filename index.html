@@ -16,14 +16,22 @@
         }
 
         body {
-            background-image: url(img/bg-cloud.jpg);
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-color: #344a71; /*#e5f4f9;*/
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
             font-size: 10pt;
             color: white;
             text-shadow: 0 0 3px rgba(10, 10, 10, 0.7);
+            /* 
+                Background 
+            */
+            background-repeat: no-repeat;
+            /*  
+            background-image: url(img/bg-geo.jpg);
+            background-size: cover;
+            background-position: center center;
+            */
+            background-image: url(img/bg-cloud.jpg);
+            background-color: #344a71;
+            background-size: 100%;
         }
 
         .overlay {
@@ -78,9 +86,7 @@
             font-size: 4em;
         }
 
-        p {
-            font-size: 16px;
-        }
+
 
         a, a:link, a:visited, a:active {
             color: LightSteelBlue;
@@ -94,12 +100,13 @@
         img {
             height: 1.0em;
             width: auto;
-            max-height: 100%;
             border-width: 0;
             margin: 0;
             padding: 0;
             margin-bottom: -0.1em;
         }
+
+
 
         @media (max-height: 26em) {
             table.contact {
@@ -113,6 +120,8 @@
             }
         }
     </style>
+
+
 </head>
 <body>
     <div class="overlay"></div>
@@ -132,7 +141,6 @@
         </tr>
         <tr>
             <td class="content">
-
                 <h1>KUBA SZOSTAK</h1>
                 <table class="contact">
                     <tr>
@@ -152,7 +160,8 @@
                             <img src="img/location.png" alt="location" /></td>
                         <td>&nbsp;</td>
                         <td>Poland, Gdynia
-                            <a href="http://player.vimeo.com/video/13339553"><img src="img/youtube.play.png" alt="View location" style="font-size: 0.8em;" /></a>
+                            <a href="http://player.vimeo.com/video/13339553">
+                                <img src="img/youtube.play.png" alt="View location" style="font-size: 0.8em;" /></a>
                         </td>
                     </tr>
                 </table>
