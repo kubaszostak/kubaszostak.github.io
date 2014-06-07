@@ -1,428 +1,199 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <title>Kuba Szostak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap -->
     <link href="https://plus.google.com/114506978105649357423" rel="publisher" />
 
-    <title>Kuba Szostak</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/font-awesome.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
     <style type="text/css">
-        /* Sticky footer styles
--------------------------------------------------- */
-        html {
-            position: relative;
+        body, html {
             min-height: 100%;
-        }
-
-        body {
-            /* Margin bottom by footer height */
-            margin-bottom: 60px;
-        }
-
-        #footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            /* Set the fixed height of the footer here */
-            height: 60px;
-        }
-
-
-        /* Custom page CSS -------------------------------------------------- */
-        /* Not required for template or sticky footer method. */
-
-        body > .container {
-            padding: 60px 15px 0;
-        }
-
-        #footer > .lead {
+            height: 100%;
             margin: 0;
             padding: 0;
         }
 
-        #footer > .container {
-            padding-right: 15px;
-            padding-left: 15px;
-            padding-top: 10px;
-            padding-bottom: 0;
+        body {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 10pt;
+            color: white;
+            text-shadow: 0 0 0.2em rgba(10, 10, 10, 0.8);
+            /* 
+                Background 
+            */
+            background-repeat: no-repeat;
+            /*  
+            background-image: url(img/bg-geo.jpg);
+            background-size: cover;
+            background-position: center center;
+            */
+            background-image: url(img/bg-cloud.jpg);
+            background-color: #344a71;
+            background-size: 100%;
         }
 
-        code {
-            font-size: 80%;
+        .overlay {
+            background: #26292E; /* DarkOverlay #26292E, LightSteelBlue #B0C4DE, #7B899B, #E4F0FE, #F2F7FE  */
+            opacity: 0.8;
+            filter: alpha(opacity=80);
+            z-index: -1;
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        td.header {
+            padding-left: 0.5em;
+            padding-top: 0.3em;
+            height: 10%;
+            vertical-align: top;
+            font-size: 1.6em;
+        }
+
+        td.content {
+            height: 70%;
+        }
+
+        table.contact {
+            margin-top: 1em;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.6em;
+        }
+
+        td.footer {
+            height: 20%;
+            vertical-align: bottom;
+            text-align: center;
+            color: gray;
+            font-size: 1em;
+            padding-bottom: 0.3em;
+            padding-top: 2em;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 400;
+            font-size: 4em;
+            margin: 0em;
+        }
+        h2 {
+            text-align: center;
+            font-weight: 300;
+            font-size: 3em;
+            margin: 0;
+        }
+        h3 {
+            text-align: center;
+            font-weight: 300;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h4 {
+            text-align: center;
+            font-weight: 200;
+            font-size: 2.0em;
+            margin: 0;
+        }
+
+
+
+        a, a:link, a:visited, a:active {
+            color: LightSteelBlue;
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: SteelBlue;
+            }
+
+        img {
+            height: 1.0em;
+            width: auto;
+            border-width: 0;
+            margin: 0;
+            padding: 0;
+            margin-bottom: -0.1em;
+        }
+
+
+
+        @media (max-height: 26em) {
+            table.contact {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 26em) {
+            table.contact {
+                font-size: 1.2em;
+            }
         }
     </style>
+
+
 </head>
-
 <body>
+    <div class="overlay"></div>
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Kuba Szostak</a>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </div>
+    <table style="width: 100%; height: 100%;">
+        <tr>
+            <td class="header">
+                <a href="//google.com/KubaSzostak" rel="publisher">
+                    <img src="img/googleplus.png" alt="Kuba Szostak on Google Plus" /></a>
 
-    <!-- Begin page content -->
-    <div class="container text-center">
-        <div class="page-header">
-            <h1>Kuba Szostak</h1>
-        </div>
-        <p class="lead">
-            <small class="fa fa-envelope fa-fw"></small>&nbsp; kuba.szostak@gmail.com
-        </p>
-        <p>
-            <span class="fa fa-phone fa-fw"></span>&nbsp; +48&nbsp;696477247&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-            <span class="fa fa-location-arrow fa-fw"></span>&nbsp; Polska, Gdynia 
-            <a href="http://player.vimeo.com/video/13339553"><span class="fa fa-youtube-play fa-fw" style="color: maroon;"></span></a>
-            <br />
-        </p>
-    </div>
+                <a href="//www.youtube.com/playlist?list=PL1AC72997641A17EE" rel="publisher">
+                    <img src="img/youtube.png" alt="Kuba Szostak GIS on YouTube" /></a>
 
-    <div class="container" id="geo7" style="display: none;">
-        <h3>Geo7 Tools dla AutoCAD</h3>
-        <p class="lead">Zestaw narzędzi wspierających pracę geodetów z programem AutoCAD</p>
-        <div class="row">
-            <div class="col-sm-7">
-                <p>test</p>
-            </div>
-            <div class="col-sm-5">
-                <div id="geo7-carousel" class="carousel slide" data-ride="carousel">
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="/images/G7InsertPoint.png" alt="Wstawianie punktu">
-                            <div class="carousel-caption">
-                                Wstawianie punktu
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/images/G7Export.png" alt="Export punktów">
-                            <div class="carousel-caption">
-                                Eksport punktów
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="/images/G7BlockSettings.png" alt="Ustawienia bloków">
-                            <div class="carousel-caption">
-                                Ustawienia bloków
-                            </div>
-                        </div>
-                    </div>
+                <a href="https://github.com/kubaszostak/" rel="publisher">
+                    <img src="img/github.png" alt="Kuba Szostak on GitHub" /></a>
+            </td>
+        </tr>
+        <tr>
+            <td class="content">
+                <h1>KUBA SZOSTAK</h1>
+                <table class="contact">
+                    <tr>
+                        <td>
+                            <img src="img/email.png" alt="e-mail" /></td>
+                        <td>&nbsp;</td>
+                        <td>kuba.szostak@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/phone.png" alt="phone" /></td>
+                        <td>&nbsp;</td>
+                        <td>+48 696477247</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/location.png" alt="location" /></td>
+                        <td>&nbsp;</td>
+                        <td>Poland, Gdynia
+                            <a href="http://player.vimeo.com/video/13339553">
+                                <img src="img/youtube.play.png" alt="View location" style="font-size: 0.8em;" /></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                <a href="http://mapviewer.org">Map Viewer</a>&nbsp;|
+                <a href="http://kubaszostak.github.io/ivt/">IVT</a>
+            </td>
+        </tr>
+    </table>
 
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#geo7-carousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#geo7-carousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container">
-
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <img class="img-thumbnail" src="/images/geo7.png" alt="Geo7 Tools" />
-                    <h2>Geo7 Tools dla AutoCAD</h2>
-                </div>
-                <p class="text-justify">
-                    GeodACad to zestaw makr wspomagających pracę geodetów z programem AutoCAD. 
-                    Chociaż głównym obszarem zastosowań makr GeodACad jest geodezja, 
-                    to mogą one być z powodzeniem używane również w innych branżach. 
-                </p>
-                <ul class="text-left">
-                    <li>Import/eksport współrzędnych z/do pliku tekstowego</li>
-                    <li>Wyszukiwanie numeru punktu</li>
-                    <li>Obliczanie spadków</li>
-                </ul>
-                <blockquote class="bg-warning" style="font-size: small;">
-                    <p>Dodano obsługę programu AutoCAD 2014</p>
-                    <footer>Zafundowane przez firmę 
-                        <em>
-                            Elipsoida - Geodezyjna Obsługa Inwestycji, Andrzej Łoniewski
-                        </em>
-                    </footer>
-                </blockquote>
-                <p class="text-left">
-                    <br />
-                    <div class="btn-group">
-                        <a class="btn btn-default" data-toggle="modal" data-target="#geo7-download" role="button">Pobierz
-                                &nbsp;<span class="fa fa-list-alt"></span>
-                        </a>
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            Wsparcie <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a data-toggle="modal" data-target="#geo7-faq" role="button" href="#geo7-faq">
-                                Często zadawane pytania
-                                &nbsp;<span class="fa fa-list-alt"></span>
-
-                                </a></li>
-                            <li><a href="http://geo7-tools.sugester.pl/" target="_blank">
-                                Zgłoś nowy pomysł 
-                                &nbsp;<span class="fa fa-external-link fa-fw"></span>  
-                                </a></li>
-                            <li><a href="https://groups.google.com/forum/#!forum/geo7-autocad" target="_blank">
-                                Znajdź rozwiązanie problemu na forum 
-                                &nbsp;<span class="fa fa-external-link fa-fw"></span>   
-                                </a></li>
-                        </ul>
-                    </div>
-                </p>
-
-                <!-- Button trigger modal -->
-
-                <p class="lead">&nbsp;</p>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="geo7-download" tabindex="-1" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="myModalLabel">Pobierz Geo7 Tools</h4>
-                        </div>
-                        <div class="modal-body text-left">
-                            <p>
-                                <strong>Geo7 Tools dla AutoCAD 2013-2014</strong>
-
-                            </p>
-                            <div class="clearfix">
-                                <a class="btn btn-default" role="button" href="http://novotive.com/files/Geo7.Tools.AutoCAD.2013.bundle.zip">Pobierz&nbsp; 
-                                    <i class="glyphicon glyphicon-download-alt"></i>
-                                </a>
-                            </div>
-                            <p class="clearfix">&nbsp;</p>
-
-                            <hr />
-                            <p>
-                                <strong>Wersje archiwalne</strong><br />
-                                <span class="text-muted">Wersje archiwalne nie są już rozwijane. </span>
-                            </p>
-
-                            <p>
-                                Geo7 Tools dla AutoCAD 2010-2012<br />
-                            </p>
-                            <div class="clearfix">
-                                <a class="btn btn-default btn-sm" role="button" href="http://novotive.com/files/Geo7.Tools.AutoCAD.2010.bundle.zip">Pobierz&nbsp; 
-                                    <i class="glyphicon glyphicon-download-alt"></i>
-                                </a>
-                            </div>
-                            <p class="clearfix">&nbsp;</p>
-
-
-                            <p>
-                                GeodACad dla AutoCAD 2000-2005
-                                <br />
-                                <span class="small text-muted">Do poprawnego działania makr GeodACad niezbędny jest AutoCAD 2000 lub nowszy 
-                                  z zainstalowanym VBA (Visual Basic for Application). Makra GeodACAD nie działają 
-                                  z programem AutoCAD LT, który nie ma obsługi makr napisanych w Visual Basic.</span>
-                            </p>
-                            <div class="clearfix">
-                                <a class="btn btn-default btn-sm" role="button" href="http://novotive.com/files/GeodACad-2.2.2.exe">Pobierz&nbsp; 
-                                    <i class="glyphicon glyphicon-download-alt"></i>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="geo7-faq" tabindex="-1" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="H1">Geo7 Tools - Często zadawane pytania</h4>
-                        </div>
-                        <div class="modal-body text-left">
-                            <strong>Problem z uzyskaniem licencji</strong><br />
-                            <p>
-                                Najczęstszą przyczyną zgłaszanych problemów dotyczących uzyskania licencji 
-                                jest fakt używania starszej wersji Geo7 Tools. Poprzednie wersje Geo7 Tools 
-                                generowały licencję za pomocą usługi sieciowej zlokalizowanej na serwerze geo7.eu, 
-                                która nie jest już aktywna. W tej chwili usługa sieciowa generująca licencje znajduje 
-                                się pod adresem lic.novotiv.com. Aby rozwiązać problem należy pobrać najnowszą wersję 
-                                Geo7 Tools z naszej strony a następnie wygenerować klucz licencji za pomocą 
-                                najnowszej wersji Geo7 Tools.
-                            </p>
-                            <p>
-                                W przypadku problemów z uzyskaniem licencji proszę przesłać na adres mailowy 
-                                link z przeglądarki internetowej, który jest generowany przy próbie pobrania licencji.
-                            </p>
-
-                            <hr />
-                            <strong>Polecenie NETLOAD nie działa w AutoCAD LT</strong>
-                            <p>
-                                AutoCAD LT to tańsza i w związku z tym okrojona wersja AutoCAD, między innymi 
-                                nie działa polecenie NETLOAD, które wczytuje Geo7 Tools. Dlatego Geo7 Tools nie działa z AutoCAD LT.
-                            </p>
-
-                            <hr />
-                            <strong>Czy Geo7 Tools będą współpracować z innymi programami CAD, np. BricsCAD?</strong>
-                            <p>
-                                Jest duże zainteresowanie przeniesieniem naszych narzędzi pod oprogramowanie 
-                                z rodziny IntelliCAD (BricsCAD, ZwCAD, itp). Mimo doświadczenia w tworzeniu narzędzi dla BricsCAD, 
-                                to na dzień dzisiejszy nie ma planów tworzenia oprogramowania pod tą platformę. 
-                                W związku z tym nie będzie Geo7 Tools dla BricCAD.<br />
-                                Można skorzystać z rozwiązań innych firm:
-                            </p>
-                            <ul>
-                                <li><a href="http://www.geox.geo.pl/produkty" target="_blank">www.geox.geo.pl/produkty</a></li>
-                                <li><a href="http://www.mapa-sg.pl/" target="_blank">www.mapa-sg.pl</a></li>
-                            </ul>
-
-                            <hr />
-                            <strong>Jak mogę zarejestrować Geo7.Tools.Autocad?</strong>
-                            <p>
-                                Aby zarejestrować Geo7 Tools, należy najpierw wczytać plik Geo7.Tools.AutoCAD.dll 
-                                za pomocą komendy NETLOAD. Następnie na palecie narzędzi Geo7 Tools należy kliknąć 
-                                przycisk "Licencja". Zostanie otworzona domyślna przeglądarka, która połaczy się 
-                                z odpowiednią stroną w celu wygenerowania licencji. Jeżeli komputer nie jest 
-                                podłączony do internetu należy skopiować adres internetowy z przeglądarki 
-                                i otworzyć go na komputerze, który jest podłączony do internetu. Na podany 
-                                adres e-mail zostanie przesłana licencja, którą należy wgrać w tym samym oknie, 
-                                które otwiera się po naciśnięciu przycisku "Licencja".
-                            </p>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <hr class="hidden-lg" />
-                    <img class="img-thumbnail" src="/images/umgis.png" alt="UMGIS" />
-                    <h2>UMGIS</h2>
-                </div>
-                <p class="text-justify">
-                    Zaawansowana aplikacja internetowa umożliwiająca przeglądanie map dostępnych 
-                    za pośrednictwem usług sieciowych (WMS, WMTS, ArcGIS, KML, ...). Umożliwia dodawanie 
-                    własnych map, wykonywanie pomiarów, dodawanie kształtów na podstawie współrzędnych
-                    oraz wydruki. Umożliwia również transformację współrzędnych pomiędzy różnymi 
-                    układami współrzędnych. Np. PL-1992, PL-2000, UTM, WGS-84.
-                </p>
-                <p class="text-left">
-                    <br />
-                    <a class="btn btn-default" href="http://kubaszostak.github.io/umgis/" role="button">Zobacz on-line 
-                                &nbsp;<span class="fa fa-external-link fa-fw"></span>  
-
-                    </a>
-                </p>
-                <p class="lead">&nbsp;</p>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="text-center">
-                    <hr class="hidden-lg" />
-                    <img class="img-thumbnail" src="/images/mapviewer.png" alt="MapViewer.org">
-                    <h2>MapViewer</h2>
-                </div>
-                <p class="text-justify">
-                    Aplikacja internetowea zoptymalizowana pod kątem urządzeń mobilnych (iPhone, Android, Windows Phone)
-                    umożliwiająca przeglądanie map dostępnych za pośrednictwem usług sieciowych (WMS, WMTS, ArcGIS, KML, ...).
-                    Szczegóny nacisk został położony na kompatybilność ze standardem OGC Web Map Service (WMS). 
-                </p>
-                <p class="text-left">
-                    <br />
-                    <a class="btn btn-default" href="http://kubaszostak.github.io/mapviewer/" role="button">Zobacz on-line 
-                                &nbsp;<span class="fa fa-external-link fa-fw"></span>  
-
-                    </a>
-                </p>
-                <p class="lead">&nbsp;</p>
-            </div>
-
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-
-
-    <div class="container">
-        <p class="lead">&nbsp;</p>
-    </div>
-
-
-    <hr style="margin: 0;" />
-    <div id="footer">
-        <div class="container">
-            <p class="pull-right">
-                <a href="http://e-geosoft.com" target="_blank">e-geosoft.com</a> |
-                <a href="http://novotive.com" target="_blank">novotive.com</a> |
-                <a href="http://wakacje.sopot.pl" target="_blank">wakacje.sopot.pl</a> |
-                <a href="http://kubaszostak.github.io/ivt" target="_blank">IVT</a> |
-                <a href="http://kubaszostak.github.io/pmk/" target="_blank">PMK</a>
-            </p>
-            <p class="lead">
-                <a href="http://google.com/+KubaSzostak?rel=author&prsrc=3" target="_blank" title="Kuba Szostak w Google+"><span class="fa fa-google-plus-square fa-fw"></span></a>
-                <a href="http://www.youtube.com/kubaszostak" target="_blank"><span class="fa fa-youtube fa-fw"></span></a>
-                <a href="http://facebook.com/kuba.szostak/" target="_blank"><span class="fa fa-facebook-square fa-fw"></span></a>
-                <a href="http://github.com/kubaszostak/" target="_blank"><span class="fa fa-github-square fa-fw"></span></a>
-                <a href="http://kubaszostak.github.io/" target="_blank" title="Kuba Szostak"><span class="fa fa-github-alt fa-fw"></span></a>
-            </p>
-        </div>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
